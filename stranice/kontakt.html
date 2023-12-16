@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../grafika/Asset-1.ico">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responzivnost/style-res-nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=PT+Serif&display=swap" rel="stylesheet">
+    <title>The Continental</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="../index.html">The Continental</a></li>
+                <li class="menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+            </ul>
+            
+            <div class="drop-down nav-rs">
+                <ul>
+                    <li class="nav-rs"><a href="../stranice/oNama.html" class="nav-hover">O nama</a></li>
+                    <li class="nav-rs"><a href="usluge.html" class="nav-hover">Usluge</a></li>
+                    <li class="nav-rs"><a href="kontakt.html" class="nav-hover">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Kontaktirajte nas i rezervišite vaš boravak</h3>
+        </section>
+        <section>
+            <h4>Forma za rezervaciju:</h4>
+            <form action="">
+                <div class="form-field">
+                    <h5>Informacije o gostima:</h5>
+                    <label for="name">Ime:</label>
+                    <input type="text" id="name" placeholder="Unesite vaše ime" required>
+                    <label for="surname">Prezime:</label>
+                    <input type="text" id="surname" placeholder="Unesite vaše prezime" required>
+                    <label for="contact">Vaš kontaktne informacije:</label>
+                    <input type="tel" id="contact" placeholder="Unesite vaš broj telefona " required>
+                    <input type="email" id="contact" placeholder="Unesite vašu email adresu" required>
+                    <input type="text" id="contact" placeholder="(Opciono) Unesite vašu adresu stanovanja">
+
+                    <h5>Detalji rezervacije:</h5>
+                    <label for="check-in">Datum prijave:</label>
+                    <input type="date" id="check-in" required>
+                    <label for="check-out">Datum odjave:</label>
+                    <input type="date" id="check-out" required>
+                    <label for="room-type">Tip sobe:</label>
+                    <select name="room-type" id="room-type">
+                        <option value="single">Jednokrevetna</option>
+                        <option value="double">Dvokrevetna</option>
+                        <option value="suite">Apartman</option>
+                    </select>
+                    <label for="message">Ostavite nam poruku za dodatne potrebe:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Rezerviši">
+                </div>
+                <div class="form-decoration">
+                    <img src="../grafika/Group 1.svg" alt="">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Copyright &#169; Darko Samardžić</li>
+        </ul>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+
+            var navItems = document.querySelectorAll('.nav-rs');
+            navItems.forEach(item => {
+                item.style.display = (menu.classList.contains('open')) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

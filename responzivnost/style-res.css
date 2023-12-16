@@ -1,0 +1,77 @@
+
+@media screen and (max-width: 1440px) {
+    .pillar-section {
+        flex-direction: column;
+        margin: 0 2.5rem;
+    }
+    .text-section , .image-section {
+        width: 100%;
+    }
+    .tsr {
+        padding-right: 0;
+    }
+    
+    .tsl {
+        padding-left: 0;
+    }
+
+    .odd {
+        flex-direction: column-reverse;
+    }
+
+    section {
+        margin: 2rem 2.5rem;
+    }
+
+    h4 {
+        margin-top: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section h3 {
+        margin: 8rem 2rem 4rem 2rem;
+        font-size: 2rem;
+    }
+
+    section h4 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    section {
+        margin: 1rem 0.5rem;
+    }
+
+    section h3{
+        margin: 4.5rem 0 2rem;
+        font-size: 1.5rem;
+    }
+
+    .pillar-section {
+        margin: 0 0.5rem;
+    }
+
+    .image-section {
+        height: 200px;
+    }
+
+    section h4 {
+        margin: 0.65rem;
+        font-size: 1rem;
+    }
+
+    section p {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+}

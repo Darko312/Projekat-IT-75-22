@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../grafika/Asset-1.ico">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responzivnost/style-res-nav.css">
+    <link rel="stylesheet" href="../responzivnost/style-res.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=PT+Serif&display=swap" rel="stylesheet">
+    <title>The Continental</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="../index.html">The Continental</a></li>
+                <li class="menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+            </ul>
+            
+            <div class="drop-down nav-rs">
+                <ul>
+                    <li class="nav-rs"><a href="../stranice/oNama.html" class="nav-hover">O nama</a></li>
+                    <li class="nav-rs"><a href="usluge.html" class="nav-hover">Usluge</a></li>
+                    <li class="nav-rs"><a href="kontakt.html" class="nav-hover">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Dobrodošli u The Continental - Vaša Oaza Luksuza i Elegancije</h2>
+        </section>
+        <section class="pillar-section odd">
+            <div class="text-section tsr">
+                <h4>O Hotelu:</h3>
+                <p>
+                    The Continental predstavlja vrhunski luksuz u srcu metropole, spoj sofisticiranosti i udobnosti na jedinstven način. Smešten u ekskluzivnom delu grada, naš hotel je oaza mira koja nudi izuzetnu uslugu i nezaboravno iskustvo gostima iz celog sveta.
+                </p>
+            </div>
+            <img class="image-section" src="../slike/o-s10.jpg" alt="">
+        </section>
+        <section class="pillar-section">
+            <img class="image-section" src="../slike/o-s11.jpg" alt="">
+            <div class="text-section tsl">
+                <h4>Elegantan Dizajn:</h3>
+                <p>
+                    The Continental odiše elegancijom i modernim dizajnom. Svaki kutak hotela je pažljivo osmišljen kako bi pružio jedinstveni estetski doživljaj. Luksuzne sobe i apartmani su opremljeni vrhunskim namještajem, umetničkim delima i najnovijom tehnologijom kako bi vaš boravak bio nezaboravan.
+                </p>
+            </div>
+        </section>
+        <section class="pillar-section odd">
+            <div class="text-section tsr">
+                <h4>Kulinarsko Uživanje:</h3>
+                <p>
+                    Naši restorani su pravi raj za gurmane. Iskusite vrhunsku kuhinju koja spaja tradicionalne i internacionalne ukuse. Sa pažljivo odabranim jelima i vrhunskim vinima, naši kulinarski majstori zadovoljiće sva vaša nepca.
+                </p>
+            </div>
+            <img class="image-section" src="../slike/o-s12.jpg" alt="">
+        </section>
+        <section class="pillar-section">
+            <img class="image-section" src="../slike/o-s13.jpg" alt="">
+            <div class="text-section tsl">
+                <h4>Wellness i Opuštanje:</h3>
+                <p>
+                    The Continental nudi vrhunski wellness centar gdje se možete opustiti i obnoviti duh. Uživajte u luksuznom spa iskustvu, bazenu s pogledom na grad i moderno opremljenom fitness centru. Naš stručni tim osigurava da se brinemo o vašem fizičkom i mentalnom blagostanju.
+                </p>
+            </div>
+        </section>
+        <section class="pillar-section odd">
+            <div class="text-section tsr">
+                <h4>Konferencijski Prostor:</h3>
+                <p>
+                    Za poslovne putnike, The Continental nudi prostrane i moderno opremljene konferencijske dvorane. S najnovijom audio-vizualnom opremom i vrhunskom uslugom, vaš događaj će biti besprekoran i uspešan.
+                </p>
+            </div>
+            <img class="image-section" src="../slike/o-s14.jpg" alt="">
+        </section>
+        <section class="pillar-section">
+            <img class="image-section" src="../slike/o-s15.jpg" alt="">
+            <div class="text-section tsl">
+                <h4>Osoblje i Usluga:</h3>
+                <p>
+                    Naše srdačno i profesionalno osoblje posvećeno je pružanju vrhunske usluge. Spremni smo udovoljiti svakom vašem zahtevu i učiniti vaš boravak nezaboravnim iskustvom.
+                </p>
+            </div>
+        </section>
+        <section class="pillar-section odd">
+            <div class="text-section tsr">
+                <h4>Lokacija:</h3>
+                <p>
+                    The Continental se ponosi izvanrednom lokacijom, omogućavajući gostima lako istraživanje znamenitosti grada ili jednostavno opuštanje u miru i tišini našeg ekskluzivnog okoliša.
+                </p>
+            </div>
+            <img class="image-section" src="../slike/o-s16.jpg" alt="">
+        </section>
+        <section>
+            <p>
+                Doživite nezaboravan boravak u The Continental - gdje se luksuz susreće s jedinstvenošću. Vaša udobnost i zadovoljstvo su naša najviša misija. Dobrodošli u naš svet elegantnog luksuza!
+            </p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Copyright &#169; Darko Samardžić</li>
+        </ul>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+
+            var navItems = document.querySelectorAll('.nav-rs');
+            navItems.forEach(item => {
+                item.style.display = (menu.classList.contains('open')) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

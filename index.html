@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../grafika/Asset-1.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../responzivnost/style-res-nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=PT+Serif&display=swap" rel="stylesheet">
+    <title>The Continental</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="../index.html">The Continental</a></li>
+                <li class="menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+            </ul>
+            
+            <div class="drop-down nav-rs">
+                <ul>
+                    <li class="nav-rs"><a href="stranice/oNama.html" class="nav-hover">O nama</a></li>
+                    <li class="nav-rs"><a href="/stranice/kontakt.html" class="nav-hover">Usluge</a></li>
+                    <li class="nav-rs"><a href="/stranice/kontakt.html" class="nav-hover">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-banner">
+            <div class="hero-text">
+                <h1>The Continental</h1>
+                <img class="ornament" src="grafika/Asset 4.svg" alt="">  
+                <p>Hotel vaših snova</p>
+                <a href="stranice/kontakt.html">Rezerviši odmah</a>
+            </div>
+            <div class="shade"></div>
+            <img class="hero-img" src="slike/hero.jpg" alt="">
+        </div>
+        <section>
+            <h2>Asortiman</h2>
+            <p>Sa svojim elegantnim sobama i apartmanima, The Continental pruža savršen spoj modernog komfora i tradicionalnog šarma. Svaka soba je dizajnirana da stvori spokojnu i opuštajuću atmosferu, sa plišanom posteljinom, luksuznim sadržajima i zadivljujućim pogledom na more ili grad.</p>
+            <div class="gallery-1">
+                <img src="slike/s1.jpg" alt="">
+                <img src="slike/s2.jpg" alt="">
+                <img src="slike/s3.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <h2>Lokacije</h2>
+            <p>Gosti hotela The Continental mogu uživati u nizu pogodnosti, uključujući bazen na krovu i bar, fitnes centar i spa centar sa punom uslugom. Hotel takođe ima restoran na licu mesta, gde gosti mogu da uživaju u ukusnoj domaćoj kuhinji koju pripremaju talentovani kuvari hotela.</p>
+            <div class="gallery-2">
+                <img src="slike/s4.jpg" alt="">
+                <img src="slike/s5.jpg" alt="">
+                <img src="slike/s6.jpg" alt="">
+                <img src="slike/s7.jpg" alt="">
+                <img src="slike/s8.jpg" alt="">
+                <img src="slike/s9.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Copyright &#169; Darko Samardžić</li>
+        </ul>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+
+            var navItems = document.querySelectorAll('.nav-rs');
+            navItems.forEach(item => {
+                item.style.display = (menu.classList.contains('open')) ? 'block' : 'none';
+            });
+        }
+    </script> 
+</body>
+</html>
