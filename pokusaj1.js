@@ -14,22 +14,26 @@ var zenskaImena = [
 ];
 
 
-function pretraziImena() {
-    var pol = document.getElementById('polZivotinje').value;
-    var unos = document.getElementById('unosSlova').value.trim().toLowerCase();
+function pretraziImena(pol, unos) {
     var izabraniNiz = pol === 'muški' ? muskaImena : zenskaImena;
     var filtriranaImena;
 
     if (unos) {
         filtriranaImena = izabraniNiz.filter(ime => ime.toLowerCase().startsWith(unos));
     } else {
-        
         filtriranaImena = izabraniNiz;
     }
 
     var izabranoIme = filtriranaImena[Math.floor(Math.random() * filtriranaImena.length)];
-    document.getElementById('rezultat').textContent = izabranoIme;
+    return izabranoIme;
 }
+
+document.getElementById('potvrdiBtn').addEventListener('click', function() {
+    var pol = document.getElementById('polZivotinje').value;
+    var unos = document.getElementById('unosSlova').value.trim().toLowerCase();
+    var rezultat = pretraziImena(pol, unos);
+    document.getElementById('rezultat').textContent = rezultat;
+});
 
 
 
