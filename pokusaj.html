@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iyaberi ime za kucnog ljubimca</title>
+    <link rel="stylesheet" href="pokusaj2.css">
+</head>
+<body>
+    <div class="container">
+    <div class="malicontainer">
+        <h1>Izaberi ime za svog ljubimca!!!</h1>
+    <label for="polZivotinje">Izaberi pol:</label>
+    <select id="polZivotinje">
+        <option value="muški">Muški</option>
+        <option value="ženski">Ženski</option>
+    </select><br><br>
+
+    <label for="unosSlova">Unesi slovo/a:</label>
+    <input id="unosSlova" type="text" placeholder="Unesi slovo/a"><br><br>
+
+    <button id="potvrdiBtn">Pretraži imena</button>
+    
+
+
+    <button id="dodajPoljeBtn">Dodaj polje za unos imena</button>
+    <div id="forma"></div> <br>
+    <h3>Najlepše ime:</h3>
+    <p id="rezultat"></p>
+    
+    
+    
+    <div class="ime-kontejner">
+        <div class="ime-sekcija">
+            <h3>Muška Imena:</h3>
+            <ul id="listaImenaMuški"></ul>
+        </div>
+        <div class="ime-sekcija">
+            <h3>Ženska Imena:</h3>
+            <ul id="listaImenaŽenski"></ul>
+        </div>
+    </div>
+    <button onclick="dodajIme()">Dodaj ime u listu</button>
+    <button onclick="ispisiImenaUnazad()">Ispiši imena unazad</button>
+</div>
+</div>
+    <script src="pokusaj1.js"></script>
+</body>
+</html>
